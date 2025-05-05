@@ -137,7 +137,7 @@ struct Person people[200] = {
     {.id = 126, .name = "Jamie", .last_name = "Sturgess", .email = "jsturgess3h@studiopress.com"},
     {.id = 127, .name = "Rozella", .last_name = "Dowdeswell", .email = "rdowdeswell3i@nps.gov"},
     {.id = 128, .name = "Stesha", .last_name = "De Paepe", .email = "sdepaepe3j@odnoklassniki.ru"},
-    {.id = 129, .name = "Terri jo",.last_name = "Garred", .email = "tgarred3k@baidu.com"},
+    {.id = 129, .name = "Terri jo", .last_name = "Garred", .email = "tgarred3k@baidu.com"},
     {.id = 130, .name = "Chaddie", .last_name = "De Bell", .email = "cdebell3l@diigo.com"},
     {.id = 131, .name = "Pamela", .last_name = "Whyte", .email = "pwhyte3m@drupal.org"},
     {.id = 132, .name = "Gussy", .last_name = "Larchier", .email = "glarchier3n@cdc.gov"},
@@ -153,7 +153,7 @@ struct Person people[200] = {
     {.id = 142, .name = "Ameline", .last_name = "Odgers", .email = "aodgers3x@netvibes.com"},
     {.id = 143, .name = "Ariadne", .last_name = "Britten", .email = "abritten3y@mapy.cz"},
     {.id = 144, .name = "Ignace", .last_name = "Crevagh", .email = "icrevagh3z@sbwire.com"},
-    {.id = 145, .name = "Sara ann",.last_name = "Bisseker", .email = "sbisseker40@trellian.com"},
+    {.id = 145, .name = "Sara ann", .last_name = "Bisseker", .email = "sbisseker40@trellian.com"},
     {.id = 146, .name = "Bendick", .last_name = "Cropper", .email = "bcropper41@etsy.com"},
     {.id = 147, .name = "Leonerd", .last_name = "Hartford", .email = "lhartford42@vimeo.com"},
     {.id = 148, .name = "Paulie", .last_name = "Arno", .email = "parno43@telegraph.co.uk"},
@@ -195,7 +195,7 @@ struct Person people[200] = {
     {.id = 184, .name = "Emelen", .last_name = "Kirgan", .email = "ekirgan53@hud.gov"},
     {.id = 185, .name = "Virgie", .last_name = "Stockau", .email = "vstockau54@sciencedaily.com"},
     {.id = 186, .name = "Wallas", .last_name = "Roderighi", .email = "wroderighi55@cargocollective.com"},
-    {.id = 187, .name = "La verne",.last_name = "Hackforth", .email = "lhackforth56@google.de"},
+    {.id = 187, .name = "La verne", .last_name = "Hackforth", .email = "lhackforth56@google.de"},
     {.id = 188, .name = "Alix", .last_name = "Danett", .email = "adanett57@rambler.ru"},
     {.id = 189, .name = "Garwin", .last_name = "Sambath", .email = "gsambath58@digg.com"},
     {.id = 190, .name = "Krystle", .last_name = "Bilfoot", .email = "kbilfoot59@blogspot.com"},
@@ -211,23 +211,12 @@ struct Person people[200] = {
     {.id = 200, .name = "Dario", .last_name = "Orae", .email = "dorae5j@google.ru"},
 };
 
-int randomId() {
+int randomId()
+{
     return random(1, 201);
 }
 
-Person getPersonById(int id) {
+Person getPersonById(int id)
+{
     return people[id - 1];
 }
-
-std::vector<LedCommand> ledCommands = {
-    LED_GREEN, LED_RED, LED_BLINK, LED_BLUE, LED_GREEN,
-    LED_RED, LED_BLINK, LED_GREEN, LED_BLUE, LED_RED,
-    LED_BLINK, LED_GREEN, LED_BLUE, LED_RED, LED_GREEN,
-    LED_BLINK, LED_BLUE, LED_RED, LED_GREEN, LED_BLINK,
-    LED_BLUE, LED_RED, LED_GREEN, LED_BLINK, LED_BLUE,
-    LED_RED, LED_GREEN, LED_BLINK, LED_BLUE, LED_RED,
-    LED_GREEN, LED_BLINK, LED_BLUE, LED_RED, LED_GREEN,
-    LED_BLINK, LED_BLUE, LED_RED, LED_GREEN, LED_BLINK,
-    LED_BLUE, LED_RED, LED_GREEN, LED_BLINK, LED_BLUE,
-    LED_RED, LED_GREEN, LED_BLINK, LED_BLUE, LED_RED
-};
