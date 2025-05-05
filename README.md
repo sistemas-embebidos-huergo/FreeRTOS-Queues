@@ -101,8 +101,8 @@ Permiten enviar un dato al principio o al final de la cola, respectivamente.
 **¿Cómo se usan?**
 
 ```c
-xQueueSendToFront(miCola, &valor, 0); // Envía al principio de la cola
-xQueueSendToBack(miCola, &valor, 0);  // Envía al final de la cola (igual que xQueueSend)
+xQueueSendToFront(myQueue, &value, 0); // Envía al principio de la cola
+xQueueSendToBack(myQueue, &value, 0);  // Envía al final de la cola (igual que xQueueSend)
 ```
 
 - El tercer parámetro es el tiempo de espera (0 significa no esperar).
