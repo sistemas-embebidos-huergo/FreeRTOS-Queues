@@ -1,13 +1,5 @@
 #include "data.h"
 
-struct Person
-{
-    int id;
-    String name;
-    String last_name;
-    String email;
-};
-
 struct Person people[200] = {
     {.id = 1, .name = "Sybille", .last_name = "Falco", .email = "sfalco0@privacy.gov.au"},
     {.id = 2, .name = "Avivah", .last_name = "Erington", .email = "aerington1@tiny.cc"},
